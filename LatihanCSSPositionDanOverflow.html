@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Latihan CSS Position dan Overflow </title>
+        <style media="screen">
+            .container{
+                width: 50%;
+                height: 200px;
+                overflow: auto;
+                margin-left: 0 auto;
+            }
+            .static{
+                position: static;
+                border: 2px solid green;
+            }
+            .relative{
+                position: relative;
+                border: 2px solid red;
+                left: 20px; /* jarak dari posisi paling kiri sebesar 20 px */
+                bottom: 0; /* jarak dari posisi paling bawah sebesar 0px */
+            }
+            .absolute{
+                position: absolute;
+                border: 2px solid blue;
+                left: 20px;
+                bottom: 40px;
+            }
+            .fixed{
+                position: fixed;
+                border: 2px solid black;
+                bottom: 0;
+                right: 0;
+            }
+            .sticky{
+                position: sticky;
+                border: 2 px solid yellow;
+                top: 0;
+                left: 20px;
+                background: darkblue;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+
+            <p class="sticky">Ini adalah contoh dari posisi sticky</p>
+
+            <p class="static">
+                <b>Ini adalah contoh dari posistion static</b>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                deserunt mollit anim id est laborum.
+            </p>
+
+            <p class="relative">
+                <b>Ini adalah contoh dari posistion relative</b>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                deserunt mollit anim id est laborum.
+            </p>
+
+            <p class="absolute">
+                <b>Ini adalah contoh dari posistion absolute</b>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                deserunt mollit anim id est laborum.
+            </p>
+
+            <p class="fixed">
+                Ini adalah contoh dari posisi fixed
+            </p>
+        </div>
+    </body>
+</html>

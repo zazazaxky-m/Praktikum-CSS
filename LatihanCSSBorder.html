@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Latihan CSS Border</title>
+        <style media="screen">
+            .btn-red{padding: 10px; background: #fc0202; color: #fff;}
+            .btn-blue{padding: 10px; background: #0979b1; color: #fff;}
+            .btn-green{padding: 10px; background: #59d30c; color: #fff;}
+            .btn-cyan{padding: 10px; background: #21e1ff; color: #fff;}
+            .btn-yellow{padding: 10px; background: #ffbb00; color: #fff;}
+            .btn-purple{padding: 10px; background: #9034ff; color: #fff;}
+            .solid{
+                border-style: solid; border-width: 4px; border-color: #000;
+            }
+            .dotted{
+                border-style: dotted; border-width: 4px; border-color: #000;
+            }
+            .double{
+                border-style: double; border-width: 4px; border-color: #000;
+            }
+            .ridge{
+                border-style: ridge; border-width: 4px;
+            }
+            .inset{
+                border-style: inset; border-width: 4px;
+            }
+            .outset{
+                border-style: outset; border-width: 4px;
+            }
+            .round{
+                border-radius: 20px;
+            }
+        </style>
+    </head>
+    <body>  
+        <fieldset>
+            <legend>Border Style</legend>
+            <p class="btn-red solid">Solid</p>
+            <p class="btn-blue dotted">Dotted</p>
+            <p class="btn-green ridge">Ridge</p>
+            <p class="btn-cyan double">Double</p>
+            <p class="btn-yellow inset">Inset</p>
+            <p class="btn-purple outset">Outset</p>
+        </fieldset>
+
+        <fieldset class="round">
+            <legend>Round Border</legend>
+            <p class="btn-red solid round">Solid</p>
+            <p class="btn-blue dotted round">Dotted</p>
+            <p class="btn-green ridge round">Ridge</p>
+            <p class="btn-cyan double round">Double</p>
+            <p class="btn-yellow inset round">Inset</p>
+            <p class="btn-purple outset round">Outset</p>
+        </fieldset>
+    </body>
+</html>
